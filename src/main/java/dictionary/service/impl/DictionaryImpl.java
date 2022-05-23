@@ -5,7 +5,7 @@ import dictionary.service.Dictionary;
 import java.util.List;
 import static java.util.Arrays.asList;
 
-public class SimpleDictionaryImpl implements Dictionary {
+public class DictionaryImpl implements Dictionary {
     private static List<Word> words;
 
     static {
