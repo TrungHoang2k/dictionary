@@ -1,16 +1,11 @@
-<%@ page import="dictionary.model.Word" %>
-
-
-<form action="/translator" method="post">
-    <fieldset>
-        <legend>Result</legend>
-        <input type="hidden" name="id" value="">
-        <table>
-            <tr>
-                <td>
-                    ${string}
-                </td>
-        </table>
-    </fieldset>
-</form>
+<fieldset>
+    <legend>Result</legend>
+    <table>
+        <tr>
+            <td>
+                ${word}
+            </td>
+        </tr>
+    </table>
+</fieldset>
 <a href="/translator">Back to translator</a>.

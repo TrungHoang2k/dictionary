@@ -1,10 +1,8 @@
 package dictionary.model;
 
-public class Word implements Cloneable {
-    private Long id;
+public class Word{
     private String eng;
     private String vie;
-
 
     public Word() {
     }
@@ -12,20 +10,6 @@ public class Word implements Cloneable {
     public Word(String eng, String vie) {
         this.eng = eng;
         this.vie = vie;
-    }
-
-    public Word(Long id, String eng, String vie) {
-        this.id = id;
-        this.eng = eng;
-        this.vie = vie;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getEng() {
@@ -43,22 +27,5 @@ public class Word implements Cloneable {
     public void setVie(String vie) {
         this.vie = vie;
     }
-
-    @Override
-    public Word clone() {
-        Word word = new Word();
-        word.setId(id);
-        word.setEng(eng);
-        word.setVie(vie);
-        return word;
-    }
-
-    @Override
-    public String toString() {
-        return "Word{" +
-                "id=" + id +
-                ", eng='" + eng + '\'' +
-                ", vie='" + vie + '\'' +
-                '}';
-    }
 }
+

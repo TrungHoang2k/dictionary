@@ -1,5 +1,4 @@
-
-<form action="/result" method="get" >
+<form action="/result" method="post" >
     <fieldset>
         <legend>Dictionary</legend>
         <table>
@@ -10,7 +9,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td>
                     <input type="submit" value="translate">
                 </td>
             </tr>
